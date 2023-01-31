@@ -26,7 +26,7 @@ const database = module.exports = () =>
 
 database();
 
-app.listen(80, () => console.log("server is runnning at port 80!"));
+app.listen(3000, () => console.log("server is runnning at port 3000!"));
 
 /*
 var http=require('http');
