@@ -14,7 +14,7 @@ const database = module.exports = () =>
     }
 
     try {
-        mongoose.connect('mongodb+srv://root:root@cluster0.jsiwpbc.mongodb.net/?retryWrites=true&w=majority',
+        mongoose.connect(process.env.MONGODB_URL,
         connectionParams
         );
         console.log('success');
